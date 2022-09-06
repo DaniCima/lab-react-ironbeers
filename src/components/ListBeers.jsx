@@ -16,6 +16,11 @@ function ListBeers({ beersState }) {
               />
               {beer.name}
             </Link>
+            <p className="card-text">{beer.tagline}</p>
+            <p className="card-text">
+              Contrubuted By:{" "}
+              <small className="text-muted">{beer.contributed_by}</small>
+            </p>
           </div>
         );
       })}

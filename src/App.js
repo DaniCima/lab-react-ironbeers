@@ -31,7 +31,10 @@ function App() {
             element={<ListBeers beersState={beersState} />}
           />
           <Route path="/random-beer" element={<RandomBeer />} />
-          <Route path="/beers/:beerId" element={<SingleBeer />} />
+          <Route
+            path="/beers/:beerId"
+            element={<SingleBeer beersState={beersState} />}
+          />
           <Route path="/new-beer" element={<NewBeer />} />
         </Route>
       </Routes>
